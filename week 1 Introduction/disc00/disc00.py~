@@ -1,0 +1,121 @@
+# discussion00
+
+# 1.3 Questions
+
+# 1. What will Python print?
+x = 6
+def square(x):
+    return x * x
+square(x)             
+
+max(pow(2, 3), square(-5)) - square(4)       
+
+# Answer
+# 36
+# 9
+
+# 2. What will Python print?
+from operator import sub, mul
+def print_sub(x, y):
+    print('sub')
+    return sub(x, y)
+def print_mul(x, y):
+    print('mul')
+    return mul(x, y)
+print_mul(print_sub(506, 2), 4)
+
+# Answer
+# sub
+# mul
+# 2016
+
+# 2.3 Questions
+
+# 1. Determine the result of evaluating the following functions in the Python interpreter
+from operator import add
+def double(x):
+    return x + x
+def square(y):
+    return y * y
+def f(z):
+    add(square(double(z)), 1)
+f(4)
+
+# Answer
+# 65
+
+# 2. What is the result of evaluating the following code?
+from operator import add
+def square(x):
+    return x * x
+def fun(num):
+    return num
+    num / 0
+square(fun(5))
+
+# Answer
+# 25
+
+# 3. What will Python print?
+x = 10
+def foo():
+    return x
+def bar(x):
+    return x
+def foobar(new_value):
+    x = new_value
+    y = x + 1
+    return x
+foo()
+foobar(20)
+x
+y
+
+# Answer
+# 10
+# 20
+# 10
+# none
+
+# 4. What will Python print?
+def cake(batter):
+    return batter
+def pan(x, y):
+    y = y + 20
+    return x(y)
+pan(print, 10)
+pan (cake, cake(30))
+
+# Answer
+# 30
+# 50
+
+# 5. Write some code!
+def decades_ago(year):
+    """Returns the number of decades that have passed between the years and 2016.
+
+    >>>decades_ago(1995)
+    2.1
+    """
+    return (2016 - 1995) / 10
+
+
+# 3.2 Questions
+
+# 1. What will Python print for the following?
+def om(cookie):
+    return cookie
+def nom(cookie):
+    print(cookie)
+om(4)
+nom(4)
+michelle = om(-4)
+michelle + 1
+brian = non(4)
+brian + 1
+
+# Answer
+# 4
+# 4
+# - 3
+# 1
